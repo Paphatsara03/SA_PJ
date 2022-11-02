@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: FFFCF9 FFFCF9;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yote.workschedule.Controllers.PurchaseController">
+    <children>
+        <Text fill="#775b3d" layoutX="300.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PURCHASE">
+            <font>
+                <Font name="Arial Bold" size="36.0" />
+            </font>
+        </Text>
+        <Text fill="#775b3d" layoutX="118.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRITPTION">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Text>
+        <Text fill="#775b3d" layoutX="574.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRICE">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Text>
+        <Button layoutX="482.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleQrcodePurchaseButton" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #775b3d#775b3d; -fx-background-radius: 100;" text="QR CODE" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Button>
+        <Button layoutX="169.0" layoutY="402.0" mnemonicParsing="false" onAction="#handleBankPurchaseButton" prefHeight="50.0" prefWidth="130.0" style="-fx-background-color: #775b3d#775b3d; -fx-background-radius: 100;" text="BANK" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </Button>
+        <Text fill="#775b3d" layoutX="164.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATE : ">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <Text fill="#775b3d" layoutX="164.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TIME : ">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Text>
+        <Label fx:id="programPurchaseLabel" layoutX="117.0" layoutY="205.0" text="programPurchaseLabel" textFill="#a98a68">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="datePurchaseLabel" layoutX="213.0" layoutY="254.0" text="datePurchaseLabel" textFill="#a98a68">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="timePurchaseLabel" layoutX="213.0" layoutY="292.0" text="timePurchaseLabel" textFill="#a98a68">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="pricePurchaseLabel" layoutX="538.0" layoutY="205.0" text="pricePurchaseLabel" textFill="#a98a68">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
